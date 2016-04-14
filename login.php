@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+require_once("mysql.php");
+?>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -31,7 +34,7 @@
         <h1 class="header col s12 light">Login</h1>
       </div>
       <div class="container">
-          <form method="post" action="">
+          <form method="post" action="homepage.php?token='aaaaaaa'">
               <div class="input-field col s12">
                   <input type="text" name="user_id" class="validate">
                   <label for="user_id">User ID</label>

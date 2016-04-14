@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require("mysql.php");
+require_once("mysql.php");
 ?>
 <html lang="en">
 <head>
