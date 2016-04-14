@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    padding:0;
+}
+.navbar-brand {
+        width: 130px;
+}
+.ava{
+    width: 50px;
+    margin:0;
+    padding:0;
+}
+.nama{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+}
+.nama a{
+    color: darkgrey;
+}
+.span1{
+    margin:0;
+    padding:5px;
+}
+.small8{
+    font-size: 8pt;
+}
+
+/* calendar */
+table.calendar		{
+    border-left:1px solid #999;
+}
+tr.calendar-row	{
+    height : 120px;
+}
+td.calendar-day	{
+    min-height: 120px;
+    font-size:11px;
+}
+td.calendar-day:hover	{
+    background:#eceff5;
+}
+td.calendar-day-np	{
+    background:#eee; min-height:80px;
+}
+td.calendar-day-head {
+    background:#ccc;
+    font-weight:bold;
+    text-align:center;
+    width:120px;
+    padding:5px;
+    border-bottom:1px solid #999;
+    border-top:1px solid #999;
+    border-right:1px solid #999;
+}
+div.day-number		{
+    margin-top:-5px;
+    margin-right:-5px;
+    float :right;
+    background:#999;
+    padding:5px;
+    color:#fff;
+    font-weight:bold;
+    width:20px;
+    text-align:center;
+
+}
+/* shared */
+td.calendar-day, td.calendar-day-np {
+    vertical-align: top;
+    width:120px;
+    padding:5px;
+    border-bottom:1px solid #999;
+    border-right:1px solid #999;
+}
+
+input{
+    display:block;
+}
+select{
+    display:block;
+}
+
+#header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#content{
+    margin:auto;
+    padding:20px 20px 60px 0px;
+    max-width:1050px;
+}
+.flex{
+    display : flex;
+}
+
+.special-pad{
+    padding-top:50px;
+}
+
+#calendar{
+    order:1;
+    margin-right : 20px;
+}
+#list{
+    order: 1;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#form{
+    order:2;
+    padding-top : 150px;
+    margin-left: 10px;
+}
+
+.list{
+    margin-top: 15px;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;
+}
+::-moz-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+}
