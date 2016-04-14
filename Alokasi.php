@@ -20,7 +20,7 @@
 	    echo "Error updating record: " . $conn->error;
 	}
 
-	header('Location: http://localhost/xampp/SI/KSRS/jadwal_siar_admin.php');
+	header('Location: http://localhost/KSRS/jadwal_siar_admin.php');
 
 	$conn->close();
 ?>

@@ -93,7 +93,7 @@
                                   <th>'.$row["Hari"].'</th>
                                   <th>'.$row["Waktu_Mulai"].'</th>
                                   <th>'.$row["Waktu_Selesai"].'</th>
-                                  <th><a href="http://localhost/xampp/SI/KSRS/Penyiar.php?id_acara='.$row["ID_Acara"].'">Alokasi</a></th>
+                                  <th><a href="http://localhost/KSRS/Penyiar.php?id_acara='.$row["ID_Acara"].'">Alokasi</a></th>
                                 </tr>
                               </tbody>
                             ';

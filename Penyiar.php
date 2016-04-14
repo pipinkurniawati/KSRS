@@ -84,7 +84,7 @@
                             <th>'.$row["nama"].'</th>
                             <th>'.$row["no_hp"].'</th>
                             <th>'.$row["email"].'</th>
-                            <th><a href="http://localhost/xampp/SI/KSRS/Alokasi.php?id_penyiar='.$id_penyiar.'&id_acara='.$id_acara.'">Pilih</a></th>
+                            <th><a href="http://localhost/KSRS/Alokasi.php?id_penyiar='.$id_penyiar.'&id_acara='.$id_acara.'">Pilih</a></th>
                           </tr>
                         </tbody>
                       ';
