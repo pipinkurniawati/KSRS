@@ -47,14 +47,13 @@
                   if ($conn->connect_error) {
                       die("Connection failed: " . $conn->connect_error);
                   } 
-                  $sql = "SELECT * FROM calon_penyiar where status_aplikasi='diterima'";
+                  $sql = "SELECT * FROM calon_penyiar where `status_aplikasi` is NULL";
                   $result = $conn->query($sql);                      
                   echo'
                     <table ui-jq="dataTable" class="table table-striped b-t b-b">
                       <thead>
                         <tr>
                           <th  style="width:18%">Nama Lengkap</th>
-                          <th  style="width:18%">Tempat/Tanggal Lahir</th>
                           <th  style="width:18%">Alamat</th>
                         </tr>
                       </thead>
@@ -62,12 +61,14 @@
                   if ($result->num_rows > 0) {
                     // output data of each row
                     while($row = $result->fetch_assoc()) {
+                      $id_calon = $row["id_calon"];
                       echo'
                         <tbody>
                           <tr>
                             <th>'.$row["nama"].'</th>
-                            <th>'.$row["tempat_tanggal_lahir"].'</th>
                             <th>'.$row["alamat"].'</th>
+                            <th><a href="http://localhost/KSRS/Terima.php?id_calon='.$id_calon.'&status='."diterima".'">Terima</a></th>
+                            <th><a href="http://localhost/KSRS/Terima.php?id_calon='.$id_calon.'&status='."ditolak".'">Tolak</a></th>
                           </tr>
                         </tbody>
                       ';

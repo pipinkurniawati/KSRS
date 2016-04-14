@@ -46,8 +46,7 @@
               <div class="panel-body">
                 <div class="table-responsive">
                 <?php
-                  $hari_masukan = "";
-                  
+                  $hari_masukan = "";       
                   $id_acara = $_GET["id_acara"];
                   $servername = "localhost";
                   $username = "root";
