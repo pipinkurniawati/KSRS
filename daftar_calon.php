@@ -54,7 +54,10 @@
                       <thead>
                         <tr>
                           <th  style="width:18%">Nama Lengkap</th>
-                          <th  style="width:18%">Alamat</th>
+                          <th  style="width:25%">Alamat</th>
+                          <th  style="width:18%">Jenis Kelamin</th>
+                          <th  style="width:18%">Agama</th>
+                          <th  style="width:18%">Email</th>
                         </tr>
                       </thead>
                   ';
@@ -67,6 +70,9 @@
                           <tr>
                             <th>'.$row["nama"].'</th>
                             <th>'.$row["alamat"].'</th>
+                            <th>'.$row["jenis_kelamin"].'</th>
+                            <th>'.$row["agama"].'</th>
+                            <th>'.$row["email"].'</th>
                             <th><a href="http://localhost/KSRS/Terima.php?id_calon='.$id_calon.'&status='."diterima".'">Terima</a></th>
                             <th><a href="http://localhost/KSRS/Terima.php?id_calon='.$id_calon.'&status='."ditolak".'">Tolak</a></th>
                           </tr>

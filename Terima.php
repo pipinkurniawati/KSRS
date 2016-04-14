@@ -20,6 +20,7 @@
 	    echo "Error updating record: " . $conn->error;
 	}
 
+	header('Location: http://localhost/KSRS/daftar_calon.php');
 
 	$conn->close();
 ?>
