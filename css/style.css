@@ -13,7 +13,9 @@
 	font-size: inherit;
 }
 
-span.error {
+.error {
     font-size: inherit;
     color: #FF1744;
 }
+
+.button-center { text-align: center }

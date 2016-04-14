@@ -133,9 +133,11 @@ require("mysql.php");
                   <label for="alasan">Alasan</label>
                   <span class="error"><?php echo $reasonErr; ?></span>
               </div>
+              <div class="button-center">
               <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                   <i class="material-icons right">send</i>
               </button>
+              </div>
           </form>
           
       </div>
