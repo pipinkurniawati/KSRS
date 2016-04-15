@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -21,68 +21,9 @@
       </div>
       <br><br><br><br><br>
       <div class="row center">
-        <h2 class="header col s12 light">Daftar Penyiar Baru K-Lite FM</h2>
+        <h1 class="header col s12 light">K-Lite FM</h1>
       </div>
-      <div class="wrapper-lg">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="table-responsive">
-                <?php
-                  $servername = "localhost";
-                  $username = "root";
-                  $password = "";
-                  $dbname = "k-lite";
-
-                  // Create connection
-                  $conn = new mysqli($servername, $username, $password, $dbname);
-                  // Check connection
-                  if ($conn->connect_error) {
-                      die("Connection failed: " . $conn->connect_error);
-                  } 
-                  $sql = "SELECT * FROM calon_penyiar";
-                  $result = $conn->query($sql);                      
-                  echo'
-                    <table ui-jq="dataTable" class="table table-striped b-t b-b">
-                      <thead>
-                        <tr>
-                          <th  style="width:18%">Nama Lengkap</th>
-                          <th  style="width:18%">Tempat/Tanggal Lahir</th>
-                          <th  style="width:25%">Alamat</th>
-                          <th  style="width:18%">Agama</th>
-                          <th  style="width:18%">Status</th>
-                        </tr>
-                      </thead>
-                  ';
-                  if ($result->num_rows > 0) {
-                    // output data of each row
-                    while($row = $result->fetch_assoc()) {
-                      echo'
-                        <tbody>
-                          <tr>
-                            <th>'.$row["nama"].'</th>
-                            <th>'.$row["tempat_tanggal_lahir"].'</th>
-                            <th>'.$row["alamat"].'</th>
-                            <th>'.$row["agama"].'</th>
-                            <th>'.$row["status_aplikasi"].'</th>
-                          </tr>
-                        </tbody>
-                      ';
-                    }
-                    echo'
-                      </table>
-                    ';
-                  } 
-                  $conn->close();
-                ?>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      
 
   <footer class="page-footer orange">
     <div class="container">

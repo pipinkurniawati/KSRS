@@ -27,7 +27,7 @@
     <div class="container">
       <br><br>
       <div class="row center">
-        <h5 class="header col s12 light">Daftar Penyiar Baru K-Lite FM</h5>
+        <h5 class="header col s12 light">Jadwal Siaran K-Lite FM</h5>
       </div>
       <div class="wrapper-lg">
         <div class="row">
@@ -43,54 +43,56 @@
                 <?php
 
                   $hari_masukan = "";
-                  if ($_GET["hari"] != ""){
-                    $hari_masukan = $_GET["hari"];
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "k-lite";
+                  if (isset($_GET["hari"])){
+                    if ($_GET["hari"] != ""){
+                      $hari_masukan = $_GET["hari"];
+                      $servername = "localhost";
+                      $username = "root";
+                      $password = "";
+                      $dbname = "k-lite";
 
-                    // Create connection
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-                    // Check connection
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                    } 
+                      // Create connection
+                      $conn = new mysqli($servername, $username, $password, $dbname);
+                      // Check connection
+                      if ($conn->connect_error) {
+                          die("Connection failed: " . $conn->connect_error);
+                      } 
 
-                    $sql = "SELECT penyiar.nama as Nama_Penyiar, jadwal_siar.nama as Acara, jadwal_siar.hari as Hari, jadwal_siar.waktu_mulai_tayang as Waktu_Mulai, jadwal_siar.waktu_selesai_tayang as Waktu_Selesai  from penyiar inner join acara_penyiar on penyiar.id_penyiar = acara_penyiar.id_penyiar inner join jadwal_siar on acara_penyiar.id_acara = jadwal_siar.id_acara WHERE Hari = '$hari_masukan' order by Waktu_Mulai";
-                    $result = $conn->query($sql);                      
-                    echo'
-                      <table ui-jq="dataTable" class="table table-striped b-t b-b">
-                        <thead>
-                          <tr>
-                            <th  style="width:18%">Nama Penyiar</th>
-                            <th  style="width:18%">Acara</th>
-                            <th  style="width:18%">Hari</th>
-                            <th  style="width:18%">Waktu Mulai</th>
-                            <th  style="width:18%">Waktu Selesai</th>
-                          </tr>
-                        </thead>
-                    ';
-                    if ($result->num_rows > 0) {
-                      // output data of each row
-                      while($row = $result->fetch_assoc()) {
-                        echo'
-                          <tbody>
-                            <tr>
-                              <th>'.$row["Nama_Penyiar"].'</th>
-                              <th>'.$row["Acara"].'</th>
-                              <th>'.$row["Hari"].'</th>
-                              <th>'.$row["Waktu_Mulai"].'</th>
-                              <th>'.$row["Waktu_Selesai"].'</th>
-                            </tr>
-                          </tbody>
-                        ';
-                      }
+                      $sql = "SELECT penyiar.nama as Nama_Penyiar, jadwal_siar.nama as Acara, jadwal_siar.hari as Hari, jadwal_siar.waktu_mulai_tayang as Waktu_Mulai, jadwal_siar.waktu_selesai_tayang as Waktu_Selesai  from penyiar inner join acara_penyiar on penyiar.id_penyiar = acara_penyiar.id_penyiar inner join jadwal_siar on acara_penyiar.id_acara = jadwal_siar.id_acara WHERE Hari = '$hari_masukan' order by Waktu_Mulai";
+                      $result = $conn->query($sql);                      
                       echo'
-                        </table>
+                        <table ui-jq="dataTable" class="table table-striped b-t b-b">
+                          <thead>
+                            <tr>
+                              <th  style="width:18%">Nama Penyiar</th>
+                              <th  style="width:18%">Acara</th>
+                              <th  style="width:18%">Hari</th>
+                              <th  style="width:18%">Waktu Mulai</th>
+                              <th  style="width:18%">Waktu Selesai</th>
+                            </tr>
+                          </thead>
                       ';
-                    } 
-                    $conn->close();
+                      if ($result->num_rows > 0) {
+                        // output data of each row
+                        while($row = $result->fetch_assoc()) {
+                          echo'
+                            <tbody>
+                              <tr>
+                                <th>'.$row["Nama_Penyiar"].'</th>
+                                <th>'.$row["Acara"].'</th>
+                                <th>'.$row["Hari"].'</th>
+                                <th>'.$row["Waktu_Mulai"].'</th>
+                                <th>'.$row["Waktu_Selesai"].'</th>
+                              </tr>
+                            </tbody>
+                          ';
+                        }
+                        echo'
+                          </table>
+                        ';
+                      } 
+                      $conn->close();
+                    }
                   }
               ?>
               </div>

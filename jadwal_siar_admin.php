@@ -34,7 +34,7 @@
             ';
           }else{
             echo'
-              <h5 class="header col s12 light">Daftar Penyiar Baru K-Lite FM</h5>
+              <h5 class="header col s12 light">Jadwal Siaran K-Lite FM</h5>
             ';
           }
         ?>

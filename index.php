@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -9,98 +9,21 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <div id  = "header">
-          <?php require_once 'navigation_bar.php' ?>
+            <?php require_once 'navigation_bar.php' ?>
       </div>
-      <br><br>
+      <br><br><br><br><br>
       <div class="row center">
-        <h5 class="header col s12 light">Form Pendaftaran Calon Penyiar K-Lite</h5>
+        <h1 class="header col s12 light">K-Lite FM</h1>
       </div>
-      <div class="container">
-          <form method="POST">
-              <div class="input-field col s12">
-                  <input type="text" id="nama" class="validate">
-                  <label for="nama">Nama</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="date" id="tgl_lahir" class="datepicker">
-                  <label for="tgl_lahir">Tanggal Lahir</label>
-              </div>
-              <div class="input-field col s12">
-                   <select id="jenis_kelamin">
-                        <option value="" disabled selected>Pilih Jenis Kelamin</option>
-                        <option value="Laki-Laki">Laki-Laki</option>
-                        <option value="Perempuan">Perempuan</option>
-                  </select>
-                  <label>Jenis Kelamin</label>
-              </div>
-              <div class="input-field col s12">
-                   <select id="agama">
-                        <option value="" disabled selected>Pilih Agama</option>
-                        <option value="Islam">Islam</option>
-                        <option value="Protestan">Protestan</option>
-                        <option value="Katolik">Katolik</option>
-                        <option value="Buddha">Buddha</option>
-                        <option value="Hindu">Hindu</option>
-                  </select>
-                  <label>Agama</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="text" id="alamat" class="validate">
-                  <label for="alamat">Alamat</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="text" id="pendidikan" class="validate">
-                  <label for="pendidikan">Pendidikan</label>
-              </div>
-              <div class="input-field col s12">
-                  <select id="status">
-                        <option value="" disabled selected>Pilih Status</option>
-                        <option value="Lajang">Lajang</option>
-                        <option value="Menikah">Menikah</option>
-                        <option value="Pernah Menikah">Pernah Menikah</option>
-                  </select>
-                  <label>Status</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="text" id="no_hp" class="validate">
-                  <label for="no_hp">Nomor HP</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="email" id="email" class="validate">
-                  <label for="email">Email</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="text" id="akun_fb" class="validate">
-                  <label for="akun_fb">Akun Facebook</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="text" id="shift_mulai" class="validate">
-                  <label for="shift_mulai">Shift Mulai</label>
-              </div>
-              <div class="input-field col s12">
-                  <input type="text" id="shift_selesai" class="validate">
-                  <label for="shift_selesai">Shift Selesai</label>
-              </div>
-              <div class="input-field col s12">
-                  <textarea id="alasan" class="materialize-textarea"></textarea>
-                  <label for="alasan">Alasan</label>
-              </div>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                  <i class="material-icons right">send</i>
-              </button>
-          </form>
-          
-      </div>
-
-      <br><br>
-
-    </div>
-  </div>
+      
 
   <footer class="page-footer orange">
     <div class="container">
@@ -108,7 +31,6 @@
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
 
         </div>
         <div class="col l3 s12">
