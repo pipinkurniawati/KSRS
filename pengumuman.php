@@ -13,15 +13,15 @@
   <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div id  = "header">
-          <?php require_once 'navigation_bar.php' ?>
-  </div>
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
+      <div id  = "header">
+            <?php require_once 'navigation_bar.php' ?>
+      </div>
+      <br><br><br><br><br>
       <div class="row center">
-        <h5 class="header col s12 light">Daftar Penyiar Baru K-Lite FM</h5>
+        <h2 class="header col s12 light">Daftar Penyiar Baru K-Lite FM</h2>
       </div>
       <div class="wrapper-lg">
         <div class="row">

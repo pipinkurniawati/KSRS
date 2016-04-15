@@ -19,9 +19,9 @@
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
+      <br><br><br><br><br>
       <div class="row center">
-        <h5 class="header col s12 light">Informasi & Syarat Pendaftaran Penyiar K-Lite FM</h5>
+        <h2 class="header col s12 light">Informasi & Syarat Pendaftaran Penyiar K-Lite FM</h2>
       </div>
       <div class="container">
         <div class = "row">
