@@ -9,23 +9,19 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-clockpicker.min.css">
+  <link rel="stylesheet" type="text/css" href="css/github.min.css">
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">KSRS</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
+      <div id  = "header">
+            <?php require_once 'navigation_bar.php' ?>
+      </div>
+      <br><br><br><br><br>
       <div class="row center">
         <h5 class="header col s12 light">Jadwal Siaran K-Lite FM</h5>
       </div>
@@ -102,6 +98,7 @@
         </div>
       </div>
     </div>
+  </div>
 
   <footer class="page-footer orange">
     <div class="container">
