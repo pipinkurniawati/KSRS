@@ -39,9 +39,15 @@
             <div class="panel panel-default">
               <div class="panel-body">
                 <div class="table-responsive">
+                  <?php
+                    if (isset($_GET["token"])){
+                      $token = $_GET["token"];
+                    }
+                  ?>
                   <form>
                     Hari: 
                     <input type="text" name="hari" placeholder="Masukkan Hari">
+                    <input type="hidden" name="token" value = "<?php echo $token ?>">
                     <button>Go</button>
                   </form>
                 <?php
